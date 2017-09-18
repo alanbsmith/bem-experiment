@@ -4,7 +4,7 @@ import Header from './Header';
 import Page from './Page';
 
 
-function Sources() {
+function Bookmarks() {
   return (
     <Page>
       <Header
@@ -13,14 +13,14 @@ function Sources() {
         minHeight="200px"
       >
         <Header.Title>
-          Sources
+          Bookmarks
         </Header.Title>
       </Header>
       <Page.Body>
-        a list of sources
+        a list of bookmarked articles
       </Page.Body>
     </Page>
   );
 };
 
-export default Sources;
+export default Bookmarks;

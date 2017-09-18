@@ -10,6 +10,11 @@ const Icon = styled.div`
   height: 150px;
   width: 150px;
   margin: 5px;
+  transition: all 0.2s ease;
+  @media (max-width: 500px) {
+    height: 100px;
+    width: 100px;
+  }
 `;
 
 export default Icon;

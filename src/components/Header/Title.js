@@ -1,11 +1,24 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const Title = styled.div`
-  text-transform: capitalize;
-  font-size: 48px;
+  color: #ffffff;
+  font-size: ${props => props.fontSize};
   font-weight: 400;
   margin: 5px;
-  color: #ffffff;
+  text-transform: capitalize;
+  transition: font-size 0.2s ease;
+  @media (max-width: 500px) {
+    font-size: 36px;
+  }
 `;
+
+Title.propTypes = {
+  fontSize: PropTypes.string.isRequired,
+};
+
+Title.defaultProps = {
+  fontSize: '60px',
+};
 
 export default Title;

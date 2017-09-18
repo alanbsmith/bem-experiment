@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 
 const Link = styled(NavLink)`
   color: #263238;
-  transition: color 100ms ease;
+  transition: all 100ms ease;
   &:hover, &.active {
-    color: #90a4ae;
+    color: #0097a7;
+    transform: scale(1.1);
   }
 `;
 

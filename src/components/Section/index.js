@@ -11,7 +11,7 @@ const Section = styled.div`
   flex-direction: column;
   min-height: 200px;
   padding: 5px;
-`
+`;
 
 Section.Title = Title;
 Section.Text = Text;

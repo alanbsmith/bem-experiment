@@ -1,10 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import Header from './Header';
 import Page from './Page';
 
 
-function Sources() {
+function Source({ match }) {
+  const { name } = match.params;
+
   return (
     <Page>
       <Header
@@ -13,14 +16,22 @@ function Sources() {
         minHeight="200px"
       >
         <Header.Title>
-          Sources
+          {name}
         </Header.Title>
       </Header>
       <Page.Body>
-        a list of sources
+        a list of articles by {name}
       </Page.Body>
     </Page>
   );
 };
 
-export default Sources;
+Source.propTypes = {
+  match: PropTypes.shape({
+    params: PropTypes.shape({
+      name: PropTypes.string,
+    }).isRequired,
+  }).isRequired,
+};
+
+export default Source;

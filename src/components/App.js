@@ -13,23 +13,32 @@ const App = ({ children }) => {
       {children}
       <BottomNav>
         <BottomNav.Link
-          activeClassName="active"
           exact
           to="/"
         >
-          <FontAwesome name="newspaper-o" size="2x" />
+          <FontAwesome
+            name="newspaper-o"
+            size="2x"
+          />
         </BottomNav.Link>
         <BottomNav.Link
-          activeClassName="active"
           exact
           to="/sources/"
         >
-          <FontAwesome name="compass" size="2x" />
+          <FontAwesome
+            name="compass"
+            size="2x"
+          />
         </BottomNav.Link>
-        <FontAwesome
-          name="bookmark-o"
-          size="2x"
-        />
+        <BottomNav.Link
+          exact
+          to="/bookmarks/"
+        >
+          <FontAwesome
+            name="bookmark-o"
+            size="2x"
+          />
+        </BottomNav.Link>
       </BottomNav>
     </div>
   );

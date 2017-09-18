@@ -8,8 +8,10 @@ import {
 } from 'react-router-dom';
 
 import App from './App';
+import Bookmarks from './Bookmarks';
 import Home from './Home';
 import Sources from './Sources';
+import Source from './Source';
 
 function Root() {
   return (
@@ -17,7 +19,9 @@ function Root() {
       <App>
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/sources" component={Sources} />
+          <Route exact path="/sources/" component={Sources} />
+          <Route path="/sources/:name" component={Source} />
+          <Route path="/bookmarks" component={Bookmarks} />
           <Route path="*" component={Home} />
         </Switch>
       </App>
