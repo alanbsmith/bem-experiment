@@ -35,17 +35,17 @@ function App({ children }) {
               aria-hidden="true"
             />
           </BottomNav.Link>
-          {/* <BottomNav.Link
+          <BottomNav.Link
             exact
             to="/bookmarks/"
             aria-label="navigate to your bookmarks page"
-          > */}
+          >
             <FontAwesome
               name="bookmark-o"
               size="2x"
               aria-hidden="true"
             />
-          {/* </BottomNav.Link> */}
+          </BottomNav.Link>
         </BottomNav.Content>
       </BottomNav>
     </div>

@@ -2,6 +2,7 @@ import React from 'react';
 
 import Header from './Header';
 import Page from './Page';
+import Body from './Body';
 
 
 function Bookmarks() {
@@ -21,9 +22,9 @@ function Bookmarks() {
           </Header.Title>
         </Header.Content>
       </Header>
-      <Page.Body>
+      <Body>
         a list of bookmarked articles
-      </Page.Body>
+      </Body>
     </Page>
   );
 };
