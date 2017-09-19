@@ -7,15 +7,20 @@ import Page from './Page';
 function Bookmarks() {
   return (
     <Page>
-      <Page.Header
+      <Header
         alignItems="flex-start"
         justifyContent="flex-end"
         minHeight="200px"
       >
-        <Page.Header.Title>
-          Bookmarks
-        </Page.Header.Title>
-      </Page.Header>
+        <Header.Content
+          alignItems="flex-start"
+          justifyContent="flex-end"
+        >
+          <Header.Title>
+            Bookmarks
+          </Header.Title>
+        </Header.Content>
+      </Header>
       <Page.Body>
         a list of bookmarked articles
       </Page.Body>
