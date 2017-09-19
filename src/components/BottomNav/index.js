@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
+import Content from './Content';
 import Link from './Link';
 
-const BottomNav = styled.div`
+const BottomNav = styled.nav`
   background: #cfd8dc;
   padding: 5px;
   position: fixed;
@@ -15,6 +16,7 @@ const BottomNav = styled.div`
   justify-content: space-around;
 `;
 
+BottomNav.Content = Content;
 BottomNav.Link = Link;
 
 export default BottomNav;

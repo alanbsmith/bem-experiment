@@ -2,10 +2,11 @@ import styled from 'styled-components';
 import FontAwesome from 'react-fontawesome';
 
 const Icon = styled(FontAwesome)`
-  opacity: 0.6;
+  font-size: 20px;
   position: absolute;
+  right: 10px;
   top: 10px;
-  left: 10px;
+  transition: transform 0.2s ease;
 `;
 
 export default Icon;

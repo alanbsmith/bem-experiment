@@ -20,7 +20,7 @@ function Root() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/sources/" component={Sources} />
-          <Route path="/sources/:name" component={Source} />
+          <Route path="/sources/:id" component={Source} />
           <Route path="/bookmarks" component={Bookmarks} />
           <Route path="*" component={Home} />
         </Switch>

@@ -1,34 +1,33 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import Icon from './Icon';
+import Content from './Content';
+import Logo from './Logo';
 import Subtitle from './Subtitle';
 import Title from './Title';
+import Icon from './Icon';
 
 const Header = styled.div`
-  align-items: ${props => props.alignItems};
-  background-color: #607d8b;
   display: flex;
-  flex: 1;
-  flex-flow: column;
-  justify-content: ${props => props.justifyContent};
+  justify-content: center;
+  ${'' /* align-items: flex-end; */}
+  background-color: #607d8b;
   min-height: ${props => props.minHeight};
-  padding: 5px;
 `;
 
-Header.Icon = Icon;
+
+Header.Content = Content;
+Header.Logo = Logo;
 Header.Subtitle = Subtitle;
 Header.Title = Title;
+Header.Icon = Icon;
+
 
 Header.propTypes = {
-  alignItems: PropTypes.string.isRequired,
-  justifyContent: PropTypes.string.isRequired,
   minHeight: PropTypes.string.isRequired,
 };
 
 Header.defaultProps = {
-  alignItems: 'center',
-  justifyContent: 'center',
   minHeight: '300px',
 };
 

@@ -5,8 +5,10 @@ const Title = styled.div`
   font-size: 24px;
   font-weight: 600;
   color: #263238;
-  max-width: 500px;
+  max-width: 400px;
   padding: 5px;
+  margin-left: ${props => props.rightAlign ? 'auto' : 'none'};
+  text-align: ${props => props.rightAlign ? 'right' : 'initial'};
 `;
 
 export default Title;

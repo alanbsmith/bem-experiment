@@ -8,7 +8,7 @@ const Title = styled.div`
   margin: 5px;
   text-transform: capitalize;
   transition: font-size 0.2s ease;
-  @media (max-width: 500px) {
+  @media (max-width: 700px) {
     font-size: 36px;
   }
 `;
